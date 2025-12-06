@@ -1,0 +1,423 @@
+<!DOCTYPE html>
+<html lang="uz">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta name="description" content="Bepul webinar - professional bilim va amaliy ko'nikmalar">
+    <meta name="robots" content="index, follow">
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="">
+    <meta property="og:description" content="">
+    <meta property="og:image" content="img/og-image.jpg">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/svg+xml" href="img/favicon.svg">
+    <link rel="alternate icon" href="img/favicon.ico">
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800;900&family=Open+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Styles -->
+    <link rel="stylesheet" href="css/styles.css">
+    
+    <title>Webinar Landing Page</title>
+</head>
+<body>
+    
+    <!-- ═══════════════════════════════════════════════════════════ -->
+    <!-- 🎯 HERO SECTION -->
+    <!-- ═══════════════════════════════════════════════════════════ -->
+    <section class="hero" id="hero">
+        <div class="hero-background">
+            <div class="hero-gradient"></div>
+            <div class="hero-pattern"></div>
+        </div>
+        
+        <div class="container">
+            <div class="hero-content">
+                <!-- Category Badge -->
+                <div class="category-badge" id="categoryBadge">
+                    <span class="badge-icon">📚</span>
+                    <span class="badge-text">Kategoriya</span>
+                </div>
+                
+                <!-- Date & Time -->
+                <div class="event-meta">
+                    <div class="meta-item date">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect>
+                            <line x1="16" y1="2" x2="16" y2="6"></line>
+                            <line x1="8" y1="2" x2="8" y2="6"></line>
+                            <line x1="3" y1="10" x2="21" y2="10"></line>
+                        </svg>
+                        <span id="eventDate">9-10 dekabr</span>
+                    </div>
+                    <div class="meta-divider"></div>
+                    <div class="meta-item time">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <circle cx="12" cy="12" r="10"></circle>
+                            <polyline points="12 6 12 12 16 14"></polyline>
+                        </svg>
+                        <span id="eventTime">20:30</span>
+                    </div>
+                </div>
+                
+                <!-- Main Headline -->
+                <h1 class="hero-headline" id="heroHeadline">
+                    Prezident maktabiga samarali tayyorlanish
+                </h1>
+                
+                <!-- Subheadline -->
+                <p class="hero-subheadline" id="heroSubheadline">
+                    Farzandingiz PM ga 90% ehtimollik bilan kiradi — professional usullar bilan
+                </p>
+                
+                <!-- Mentor Card -->
+                <div class="mentor-card">
+                    <div class="mentor-photo-wrapper">
+                        <img src="img/mentor.webp" alt="Mentor" class="mentor-photo" id="mentorPhoto">
+                        <div class="mentor-badge">✓</div>
+                    </div>
+                    <div class="mentor-info">
+                        <h3 class="mentor-name" id="mentorName">Adham Sohibov</h3>
+                        <p class="mentor-title" id="mentorTitle">Prezident maktabi bo'yicha ekspert</p>
+                        <p class="mentor-bio" id="mentorBio">10+ yillik tajriba, 500+ o'quvchi PM ga kirdi</p>
+                    </div>
+                </div>
+                
+                <!-- Price Block -->
+                <div class="price-block">
+                    <div class="original-price">
+                        <span class="price-label">Oddiy narx:</span>
+                        <span class="price-value strikethrough" id="originalPrice">299 000 so'm</span>
+                    </div>
+                    <div class="current-price">
+                        <span class="price-now" id="currentPrice">BEPUL</span>
+                        <span class="discount-badge" id="discountBadge">-100%</span>
+                    </div>
+                </div>
+                
+                <!-- CTA Button (Mobile) -->
+                <a href="#registration" class="cta-button primary mobile-cta">
+                    <span>BEPUL QATNASHISH</span>
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <line x1="5" y1="12" x2="19" y2="12"></line>
+                        <polyline points="12 5 19 12 12 19"></polyline>
+                    </svg>
+                </a>
+            </div>
+        </div>
+        
+        <!-- Scroll Indicator -->
+        <div class="scroll-indicator">
+            <div class="mouse">
+                <div class="wheel"></div>
+            </div>
+            <span>Pastga suring</span>
+        </div>
+    </section>
+    
+    <!-- ═══════════════════════════════════════════════════════════ -->
+    <!-- 📊 STATS SECTION (Social Proof) -->
+    <!-- ═══════════════════════════════════════════════════════════ -->
+    <section class="stats-section" id="statsSection">
+        <div class="container">
+            <div class="stats-grid" id="statsGrid">
+                <!-- Stats will be injected by JS -->
+            </div>
+        </div>
+    </section>
+    
+    <!-- ═══════════════════════════════════════════════════════════ -->
+    <!-- ⏰ URGENCY SECTION -->
+    <!-- ═══════════════════════════════════════════════════════════ -->
+    <section class="urgency-section" id="urgencySection">
+        <div class="container">
+            <div class="urgency-wrapper">
+                <!-- Timer -->
+                <div class="timer-block">
+                    <p class="timer-label" id="timerLabel">Ro'yxatdan o'tish uchun qolgan vaqt:</p>
+                    <div class="countdown" id="countdown">
+                        <div class="countdown-item">
+                            <span class="countdown-number" id="countdownHours">00</span>
+                            <span class="countdown-label">soat</span>
+                        </div>
+                        <div class="countdown-separator">:</div>
+                        <div class="countdown-item">
+                            <span class="countdown-number" id="countdownMinutes">00</span>
+                            <span class="countdown-label">daqiqa</span>
+                        </div>
+                        <div class="countdown-separator">:</div>
+                        <div class="countdown-item">
+                            <span class="countdown-number" id="countdownSeconds">00</span>
+                            <span class="countdown-label">soniya</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Spots Left -->
+                <div class="spots-block">
+                    <div class="spots-info">
+                        <span class="spots-icon">🔥</span>
+                        <span class="spots-text" id="urgencyText">Shoshiling! Joylar soni oz qoldi</span>
+                    </div>
+                    <div class="spots-progress">
+                        <div class="progress-bar">
+                            <div class="progress-fill" id="spotsProgress"></div>
+                        </div>
+                        <span class="spots-count"><span id="spotsLeft">47</span> ta joy qoldi</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- ═══════════════════════════════════════════════════════════ -->
+    <!-- 📚 BENEFITS SECTION -->
+    <!-- ═══════════════════════════════════════════════════════════ -->
+    <section class="benefits-section" id="benefitsSection">
+        <div class="container">
+            <h2 class="section-title">
+                <span class="title-icon">🎓</span>
+                Webinarda nimalarni o'rganasiz?
+            </h2>
+            
+            <div class="benefits-grid" id="benefitsGrid">
+                <!-- Benefits will be injected by JS -->
+            </div>
+        </div>
+    </section>
+    
+    <!-- ═══════════════════════════════════════════════════════════ -->
+    <!-- 🎁 GIFTS SECTION -->
+    <!-- ═══════════════════════════════════════════════════════════ -->
+    <section class="gifts-section" id="giftsSection">
+        <div class="container">
+            <div class="gifts-card">
+                <div class="gifts-header">
+                    <div class="gift-icon-large">🎁</div>
+                    <h2 class="gifts-title" id="giftsTitle">Qatnashuvchilar uchun maxsus sovg'alar:</h2>
+                </div>
+                <ul class="gifts-list" id="giftsList">
+                    <!-- Gifts will be injected by JS -->
+                </ul>
+                <a href="#registration" class="cta-button secondary">
+                    <span>SOVG'ANI OLISH</span>
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <line x1="5" y1="12" x2="19" y2="12"></line>
+                        <polyline points="12 5 19 12 12 19"></polyline>
+                    </svg>
+                </a>
+            </div>
+        </div>
+    </section>
+    
+    <!-- ═══════════════════════════════════════════════════════════ -->
+    <!-- 💬 TESTIMONIALS SECTION -->
+    <!-- ═══════════════════════════════════════════════════════════ -->
+    <section class="testimonials-section" id="testimonialsSection">
+        <div class="container">
+            <h2 class="section-title">
+                <span class="title-icon">💬</span>
+                <span id="testimonialsTitle">Ota-onalar fikrlari:</span>
+            </h2>
+            
+            <div class="testimonials-slider" id="testimonialsSlider">
+                <!-- Testimonials will be injected by JS -->
+            </div>
+            
+            <div class="slider-dots" id="sliderDots"></div>
+        </div>
+    </section>
+    
+    <!-- ═══════════════════════════════════════════════════════════ -->
+    <!-- ❓ FAQ SECTION -->
+    <!-- ═══════════════════════════════════════════════════════════ -->
+    <section class="faq-section" id="faqSection">
+        <div class="container">
+            <h2 class="section-title">
+                <span class="title-icon">❓</span>
+                <span id="faqTitle">Ko'p so'raladigan savollar</span>
+            </h2>
+            
+            <div class="faq-list" id="faqList">
+                <!-- FAQ items will be injected by JS -->
+            </div>
+        </div>
+    </section>
+    
+    <!-- ═══════════════════════════════════════════════════════════ -->
+    <!-- 📝 REGISTRATION SECTION -->
+    <!-- ═══════════════════════════════════════════════════════════ -->
+    <section class="registration-section" id="registration">
+        <div class="container">
+            <div class="registration-card">
+                <div class="registration-header">
+                    <h2 class="registration-title">Ro'yxatdan o'tish</h2>
+                    <p class="registration-subtitle">Bepul qatnashish uchun ma'lumotlaringizni qoldiring</p>
+                </div>
+                
+                <!-- Today's registrations -->
+                <div class="today-registered">
+                    <div class="registered-avatars">
+                        <div class="avatar">👤</div>
+                        <div class="avatar">👤</div>
+                        <div class="avatar">👤</div>
+                        <div class="avatar more">+<span id="todayCount">47</span></div>
+                    </div>
+                    <span class="registered-text">Bugun ro'yxatdan o'tdi</span>
+                </div>
+                
+                <form class="registration-form" id="registrationForm">
+                    <!-- Name field (optional) -->
+                    <div class="form-group" id="nameGroup" style="display: none;">
+                        <label for="userName">Ismingiz</label>
+                        <div class="input-wrapper">
+                            <svg class="input-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path>
+                                <circle cx="12" cy="7" r="4"></circle>
+                            </svg>
+                            <input type="text" id="userName" name="name" placeholder="Ismingiz">
+                        </div>
+                    </div>
+                    
+                    <!-- Phone field -->
+                    <div class="form-group">
+                        <label for="userPhone">Telefon raqamingiz</label>
+                        <div class="input-wrapper phone-input">
+                            <div class="country-select">
+                                <img src="img/flag-uz.svg" alt="UZ" class="country-flag" id="countryFlag">
+                                <span class="country-code" id="countryCode">+998</span>
+                                <svg class="dropdown-arrow" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <polyline points="6 9 12 15 18 9"></polyline>
+                                </svg>
+                                
+                                <!-- Country dropdown -->
+                                <div class="country-dropdown" id="countryDropdown">
+                                    <div class="country-option" data-code="+998" data-flag="img/flag-uz.svg">
+                                        <img src="img/flag-uz.svg" alt="UZ">
+                                        <span>O'zbekiston (+998)</span>
+                                    </div>
+                                    <div class="country-option" data-code="+7" data-flag="img/flag-ru.svg">
+                                        <img src="img/flag-ru.svg" alt="RU">
+                                        <span>Rossiya (+7)</span>
+                                    </div>
+                                    <div class="country-option" data-code="+7" data-flag="img/flag-kz.svg">
+                                        <img src="img/flag-kz.svg" alt="KZ">
+                                        <span>Qozog'iston (+7)</span>
+                                    </div>
+                                    <div class="country-option" data-code="+992" data-flag="img/flag-tj.svg">
+                                        <img src="img/flag-tj.svg" alt="TJ">
+                                        <span>Tojikiston (+992)</span>
+                                    </div>
+                                    <div class="country-option" data-code="+996" data-flag="img/flag-kg.svg">
+                                        <img src="img/flag-kg.svg" alt="KG">
+                                        <span>Qirg'iziston (+996)</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <input type="tel" id="userPhone" name="phone" placeholder="90 123 45 67" required>
+                        </div>
+                        <span class="input-error" id="phoneError"></span>
+                    </div>
+                    
+                    <!-- Email field (optional) -->
+                    <div class="form-group" id="emailGroup" style="display: none;">
+                        <label for="userEmail">Email</label>
+                        <div class="input-wrapper">
+                            <svg class="input-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+                                <polyline points="22,6 12,13 2,6"></polyline>
+                            </svg>
+                            <input type="email" id="userEmail" name="email" placeholder="email@example.com">
+                        </div>
+                    </div>
+                    
+                    <!-- Submit button -->
+                    <button type="submit" class="submit-button" id="submitButton">
+                        <span class="button-text">BEPUL QATNASHISH</span>
+                        <span class="button-loader" style="display: none;">
+                            <svg class="spinner" viewBox="0 0 24 24">
+                                <circle cx="12" cy="12" r="10" stroke="currentColor" stroke-width="3" fill="none" stroke-dasharray="30 70"></circle>
+                            </svg>
+                            Yuborilmoqda...
+                        </span>
+                        <svg class="button-arrow" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <line x1="5" y1="12" x2="19" y2="12"></line>
+                            <polyline points="12 5 19 12 12 19"></polyline>
+                        </svg>
+                    </button>
+                    
+                    <!-- Privacy -->
+                    <p class="privacy-text">
+                        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <rect x="3" y="11" width="18" height="11" rx="2" ry="2"></rect>
+                            <path d="M7 11V7a5 5 0 0 1 10 0v4"></path>
+                        </svg>
+                        <span id="privacyText">Ma'lumotlaringiz himoyalangan</span>
+                    </p>
+                </form>
+                
+                <!-- Success message -->
+                <div class="success-message" id="successMessage" style="display: none;">
+                    <div class="success-icon">✅</div>
+                    <h3>Tabriklaymiz!</h3>
+                    <p id="successText">Siz muvaffaqiyatli ro'yxatdan o'tdingiz. Tez orada siz bilan bog'lanamiz!</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- ═══════════════════════════════════════════════════════════ -->
+    <!-- 📱 SOCIAL LINKS (Footer) -->
+    <!-- ═══════════════════════════════════════════════════════════ -->
+    <footer class="footer" id="footer">
+        <div class="container">
+            <div class="social-links" id="socialLinks">
+                <!-- Social links will be injected by JS -->
+            </div>
+            <p class="copyright">© <span id="currentYear">2024</span> Barcha huquqlar himoyalangan</p>
+        </div>
+    </footer>
+    
+    <!-- ═══════════════════════════════════════════════════════════ -->
+    <!-- 🔒 STICKY CTA (Mobile) -->
+    <!-- ═══════════════════════════════════════════════════════════ -->
+    <div class="sticky-cta" id="stickyCta">
+        <div class="sticky-content">
+            <div class="sticky-info">
+                <span class="sticky-price" id="stickyPrice">BEPUL</span>
+                <span class="sticky-spots"><span id="stickySpotsLeft">47</span> joy qoldi</span>
+            </div>
+            <a href="#registration" class="sticky-button">RO'YXATDAN O'TISH</a>
+        </div>
+    </div>
+    
+    <!-- ═══════════════════════════════════════════════════════════ -->
+    <!-- 🚪 EXIT INTENT POPUP -->
+    <!-- ═══════════════════════════════════════════════════════════ -->
+    <div class="exit-popup" id="exitPopup" style="display: none;">
+        <div class="popup-overlay"></div>
+        <div class="popup-content">
+            <button class="popup-close" id="popupClose">&times;</button>
+            <div class="popup-icon">⏰</div>
+            <h3 class="popup-title">Ketmoqchimisiz?</h3>
+            <p class="popup-text" id="exitPopupText">Bu imkoniyatni qo'ldan boy bermang! Ro'yxatdan o'ting va bepul sovg'alar oling.</p>
+            <a href="#registration" class="popup-cta" id="popupCta">DAVOM ETISH</a>
+        </div>
+    </div>
+
+    <!-- Scripts -->
+    <script src="js/config.js"></script>
+    <script src="js/script.js"></script>
+    
+    <!-- Facebook Pixel (will be injected by JS) -->
+    <noscript>
+        <img height="1" width="1" style="display:none" src="" id="fbPixelNoscript">
+    </noscript>
+</body>
+</html>
